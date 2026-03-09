@@ -48,6 +48,7 @@ pem==23.1.0
 pillow==11.1.0
 preshed==3.0.10
 propcache==0.4.1
+psycopg2-binary==2.9.11
 pycryptodome==3.23.0
 pydantic==2.11.9
 pydantic_core==2.33.2
