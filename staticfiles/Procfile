@@ -1,0 +1,1 @@
+web: gunicorn machaan_backend.wsgi

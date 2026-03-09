@@ -1,0 +1,202 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Machaan Farmhouse</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<script src="{% static 'script.js' %}"></script>
+<body>
+    <header class="navbar">
+        <img src="{% static 'images/machaanlogo.svg' %}" alt="Machaan Farmhouse" class="logo-float">
+      
+        <nav class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'gallery' %}">Events</a>
+            <a href="{% url 'facilities' %}">Facilities</a>
+            <a href="{% url 'contact' %}">Booking</a>
+        </nav>
+      </header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="contact-label">CONTACT US</div>
+
+        <h1>
+            Excited to be part of the <br>
+            <span>Machaan Farmhouse journey?</span>
+        </h1>
+
+        <p>
+            Questions, ideas, or just want to say hello? We're all ears! Whether you're a filmmaker or just a curious lamb, 
+            drop us a line; we're here to answer your queries and explore exciting opportunities.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT INFO SECTION -->
+<section class="contact-section">
+
+    <div class="contact-box">
+        <a href="#map-location" class="location-link">
+            <div class="icon">📍</div>
+        </a>
+        <h3>Address</h3>
+        <p>
+            Vivekanand Ashram Road, Bendipada, Yeoor Hills, <br>
+            Thane West, Thane, Maharashtra 400606,
+        </p>
+    </div>
+
+    <div class="contact-box">
+        <a href="tel:+917977120052" class="phone-link">
+            <div class="icon">📞</div>
+        </a>
+    
+        <h3>Phone</h3>
+        <p>
+            +91 79771 20052 <br>
+            Reach our expert event planners anytime for personalized celebration planning and detailed event guidance.
+        </p>
+    </div>
+
+    <div class="contact-box">
+        <a href="mailto:farmhousemachaan@gmail.com" class="email-link">
+            <div class="icon">✉️</div>
+        </a>
+        <h3>Email</h3>
+        <p>
+            farmhousemachaan@gmail.com <br>
+            Send your event inquiries to us — crafting memorable experiences starts with a conversation.
+        </p>
+    </div>
+
+</section>
+
+<section class="contact-form-section">
+
+    <div class="form-container">
+
+        <!-- LEFT SIDE FORM -->
+        <div class="form-box reveal">
+
+            <form>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Your Name *</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Your Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" required>
+                        <label>Your Number *</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text">
+                        <label>Subject</label>
+                    </div>
+
+                    <div class="input-group">
+                        <select required>
+                            <option value=""></option>
+                            <option> Birthday </option>
+                            <option> Wedding </option>
+                            <option> Anniversary </option>
+                            <option> Engagement </option>
+                            <option> Baby Shower </option>
+                            <option> Corporate Event </option>
+                            <option> Theme parties </option>
+                            <option> Swimming Pool Arena </option>
+                        </select>
+                        <label>Select Event *</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Number of people!</label>
+                    </div>
+
+                    <!-- DATE SECTION -->
+                    <div class="input-group">
+                    <input type="date" id="checkin" required>
+                    <label>Check In</label>
+                    </div>
+    
+                    <div class="input-group">
+                    <input type="date" id="checkout" required>
+                    <label>Check Out</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="totalAmount" readonly placeholder=" ">
+                        <label>Total Amount (₹)</label>
+                        </div>
+                        <button id="payBtn">Pay Now</button>
+    
+
+                    <div class="input-group full">
+                        <textarea rows="3"></textarea>
+                        <label>Your Message</label>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="submit-btn">Get In Touch</button>
+
+            </form>
+
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="form-image"></div>
+
+    </div>
+
+</section>
+
+   <!-- Live Location on Map -->
+
+   <section id="map-location">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1419406918!2d72.94164397498153!3d19.232644782004463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb94e426dcfb%3A0xd0db8f53d87110a7!2sMachaan%20Farmhouse!5e0!3m2!1sen!2sin!4v1772381540295!5m2!1sen!2sin"
+      width="100%" 
+      height="400" 
+      style="border:2px;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+    </section>
+
+
+<!-- PREMIUM WHATSAPP BUTTON -->
+<div class="whatsapp-float">
+    <div class="whatsapp-tooltip">Chat with us</div>
+    <a href="https://wa.me/917977120052?text=Hello%20MACHAAN%20Farmhouse,%20I%20want%20to%20book."
+       class="whatsapp-btn"
+       target="_blank">
+       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2026 MACHAAN Farmhouse</p>
+  </footer>
+
+</body>
+</html>

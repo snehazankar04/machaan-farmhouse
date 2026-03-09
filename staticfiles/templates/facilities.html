@@ -1,0 +1,364 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Facilities | Machaan Farmhouse</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<script src="{% static 'script.js' %}"></script>
+
+</head>
+<body class="facilities-page">
+
+    <header class="navbar">
+        <img src="{% static 'images/machaanlogo.svg' %}" alt="Machaan Farmhouse" class="logo-float">
+      
+        <nav class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'gallery' %}">Events</a>
+            <a href="{% url 'facilities' %}">Facilities</a>
+            <a href="{% url 'contact' %}">Booking</a>
+        </nav>
+      </header>
+
+<!-- ================= HEADER ================= -->
+
+<section class="facilities-header">
+
+    <h1>Our Facilities</h1>
+
+    <p>
+        Everything you need for a perfect stay, surrounded by nature's beauty
+    </p>
+
+</section>
+
+
+
+<!-- ================= FACILITIES GRID ================= -->
+
+<section class="facilities-grid">
+
+   <!-- ================= CARD 1 ================= -->
+<div class="product-card">
+    <div class="product-inner">
+    
+    <div class="product-front">
+        <div class="product-image">
+            <img src="{% static 'images/swimingpool.jpeg' %}">
+        </div>
+    
+        <div class="product-info">
+            <div class="facility-icon"><i class="fa-solid fa-water"></i></div>
+            <h3>Swimming Pool</h3>
+            <p>Dive into our pristine pool surrounded by relaxing forest views.</p>
+        </div>
+    </div>
+    
+    <div class="product-back">
+        <h3>Swimming Pool</h3>
+        <p>Enjoy refreshing moments with luxury seating and peaceful natural surroundings.</p>
+    <!-- Hidden Toggle & Button -->
+  <input type="checkbox" class="toggle-details" id="swim-toggle">
+  <label for="swim-toggle" class="btn">View Details</label>
+  
+
+  <!-- Expandable Details Section -->
+  <div class="details">
+    <p><strong>Timing:</strong> 6:00 AM – 9:00 PM</p>
+    <p><strong>Availability:</strong> Open All Days</p>
+    <p><strong>Access:</strong> Guests Only</p>
+  </div>
+</div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <!-- ================= CARD 2 ================= -->
+    <div class="product-card">
+    <div class="product-inner">
+    
+    <div class="product-front">
+        <div class="product-image">
+            <img src="{% static 'images/luxurycottage.jpg' %}">
+        </div>
+    
+        <div class="product-info">
+            <div class="facility-icon"><i class="fa-solid fa-house"></i></div>
+            <h3>Luxury Cottages</h3>
+            <p>Comfortable wooden cottages with modern amenities and scenic views.</p>
+        </div>
+    </div>
+    
+    <div class="product-back">
+        <h3>Luxury Cottages</h3>
+        <p>Experience premium comfort with spacious interiors and nature-inspired design.</p>
+        <!-- Hidden Toggle & Button -->
+  <input type="checkbox" class="toggle-details" id="cottage-toggle">
+<label for="cottage-toggle" class="btn">View Details</label>
+
+  <!-- Expandable Details Section -->
+  <div class="details">
+      <p><strong>Check-in:</strong> 11:00 AM</p>
+      <p><strong>Availability:</strong> Year-round</p>
+      <p><strong>Features:</strong> Private balcony, modern amenities</p>
+  </div>
+</div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <!-- ================= CARD 3 ================= -->
+    <div class="product-card">
+    <div class="product-inner">
+    
+    <div class="product-front">
+        <div class="product-image">
+            <img src="{% static 'images/dining.jpg' %} ">
+        </div>
+    
+        <div class="product-info">
+            <div class="facility-icon">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+            <h3>Fine Dining</h3>
+            <p>Enjoy delicious local and international cuisine prepared by expert chefs.</p>
+        </div>
+    </div>
+    
+    <div class="product-back">
+        <h3>Fine Dining</h3>
+        <p>Fresh ingredients, elegant ambiance, and unforgettable culinary experiences.</p>
+        
+        <!-- Hidden Toggle & Button -->
+  <input type="checkbox" class="toggle-details" id="dine-toggle">
+  <label for="dine-toggle" class="btn">View Details</label>
+  
+  <!-- Expandable Details Section -->
+  <div class="details">
+      <p><strong>Hours:</strong> 7:00 AM – 11:00 PM</p>
+      <p><strong>Cuisine:</strong> Multi-cuisine & local specialties</p>
+      <p><strong>Reservation:</strong> Recommended</p>
+</div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <!-- ================= CARD 4 ================= -->
+    <div class="product-card">
+    <div class="product-inner">
+    
+    <div class="product-front">
+        <div class="product-image">
+            <img src="{% static 'images/image9.jpg' %} ">
+        </div>
+    
+        <div class="product-info">
+            <div class="facility-icon">
+                <i class="fa-solid fa-music"></i>
+            </div>
+            <h3>Event Space</h3>
+            <p>Perfect indoor and outdoor venues for weddings and celebrations.</p>
+        </div>
+    </div>
+    
+    <div class="product-back">
+        <h3>Event Space</h3>
+        <p>Host memorable events with professional setups and scenic surroundings.</p>
+        
+        <!-- Hidden Toggle & Button -->
+  <input type="checkbox" class="toggle-details" id="space-toggle">
+  <label for="space-toggle" class="btn">View Details</label>
+  
+  <!-- Expandable Details Section -->
+  <div class="details">
+    <p><strong>Capacity:</strong> Up to 1000 guests</p>
+      <p><strong>Available For:</strong> Weddings, parties, meetings</p>
+      <p><strong>Support:</strong> Full event management</p>
+</div>
+    </div>
+    
+    </div>
+    </div>
+    
+    
+    <!-- ================= CARD 5 ================= -->
+    <div class="product-card">
+    <div class="product-inner">
+    
+    <div class="product-front">
+        <div class="product-image">
+            <img src="{% static 'images/naturetrail.jpg' %} ">
+        </div>
+    
+        <div class="product-info">
+            <div class="facility-icon">
+                <i class="fa-solid fa-tree"></i>
+            </div>
+            <h3>Nature Trails</h3>
+            <p>Explore peaceful walking paths perfect for morning walks.</p>
+        </div>
+    </div>
+    
+    <div class="product-back">
+        <h3>Nature Trails</h3>
+        <p>Reconnect with nature through scenic forest trails and fresh air.</p>
+        
+        <!-- Hidden Toggle & Button -->
+  <input type="checkbox" class="toggle-details" id="nature-toggle">
+  <label for="nature-toggle" class="btn">View Details</label>
+  
+  <!-- Expandable Details Section -->
+  <div class="details">
+    <p><strong>Open:</strong> Sunrise to Sunset</p>
+      <p><strong>Difficulty:</strong> Easy to Moderate</p>
+      <p><strong>Guide:</strong> Available on request</p>
+</div>
+    </div>
+    
+    </div>
+    </div>
+    
+    
+    <!-- ================= CARD 6 ================= -->
+    <div class="product-card">
+    <div class="product-inner">
+    
+    <div class="product-front">
+        <div class="product-image">
+            <img src="{% static 'images/gym.jpg' %}">
+        </div>
+    
+        <div class="product-info">
+            <div class="facility-icon">
+                <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <h3>Fitness Center</h3>
+            <p>Stay active with our fully equipped gym and yoga area.</p>
+        </div>
+    </div>
+    
+    <div class="product-back">
+        <h3>Fitness Center</h3>
+        <p>Maintain wellness routines while enjoying peaceful natural views.</p>
+        
+        <!-- Hidden Toggle & Button -->
+  <input type="checkbox" class="toggle-details" id="fit-toggle">
+  <label for="fit-toggle" class="btn">View Details</label>
+  
+  <!-- Expandable Details Section -->
+  <div class="details">
+    <p><strong>Hours:</strong> 5:00 AM – 10:00 PM</p>
+      <p><strong>Equipment:</strong> Cardio & yoga mat</p>
+      <p><strong>Walks:</strong> Can go for a walk in natural environment</p>
+</div>
+    </div>
+    
+    </div>
+    </div>
+    
+    
+    <!-- ================= CARD 7 ================= -->
+    <div class="product-card">
+    <div class="product-inner">
+    
+    <div class="product-front">
+        <div class="product-image">
+            <img src="{% static 'images/wifi.jpg' %} ">
+        </div>
+    
+        <div class="product-info">
+            <div class="facility-icon">
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <h3>High-Speed WiFi</h3>
+            <p>Stay connected with complimentary high-speed internet access.</p>
+        </div>
+    </div>
+    
+    <div class="product-back">
+        <h3>High-Speed WiFi</h3>
+        <p>Reliable connectivity across the property for work and entertainment.</p>
+        
+        <!-- Hidden Toggle & Button -->
+  <input type="checkbox" class="toggle-details" id="wifi-toggle">
+  <label for="wifi-toggle" class="btn">View Details</label>
+  
+  <!-- Expandable Details Section -->
+  <div class="details">
+    <p><strong>Speed:</strong> Up to 500 Mbps</p>
+      <p><strong>Coverage:</strong> Entire property</p>
+      <p><strong>Cost:</strong> Complimentary</p>
+</div>
+    </div>
+    
+    </div>
+    </div>
+    
+    
+    <!-- ================= CARD 8 ================= -->
+    <div class="product-card">
+    <div class="product-inner">
+    
+    <div class="product-front">
+        <div class="product-image">
+            <img src="{% static 'images/parking.png' %}">
+        </div>
+    
+        <div class="product-info">
+            <div class="facility-icon">
+                <i class="fa-solid fa-car"></i>
+            </div>
+            <h3>Parking</h3>
+            <p>Ample secure parking space available for all guests.</p>
+        </div>
+    </div>
+    
+    <div class="product-back">
+        <h3>Parking</h3>
+        <p>Safe and convenient parking with 24/7 security monitoring.</p>
+       
+        <!-- Hidden Toggle & Button -->
+  <input type="checkbox" class="toggle-details" id="park-toggle">
+  <label for="park-toggle" class="btn">View Details</label>
+  
+  <!-- Expandable Details Section -->
+  <div class="details">
+    <p><strong>Type:</strong> Covered & open parking</p>
+      <p><strong>Security:</strong> 24/7 CCTV</p>
+      <p><strong>Cost:</strong> Free for guests</p>
+</div>
+    </div>
+    
+    </div>
+    </div>
+    
+    </section>
+   
+    <!-- PREMIUM WHATSAPP BUTTON -->
+<div class="whatsapp-float">
+    <div class="whatsapp-tooltip">Chat with us</div>
+    <a href="https://wa.me/917977120052?text=Hello%20MACHAAN%20Farmhouse,%20I%20want%20to%20book."
+       class="whatsapp-btn"
+       target="_blank">
+       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2026 MACHAAN Farmhouse</p>
+  </footer>
+
+</body>
+</html>

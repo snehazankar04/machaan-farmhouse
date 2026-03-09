@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <style>
+    .title { font-family: 'Comic Sans MS', 'Marker Felt', cursive; font-weight: 700; }
+    .subtitle { font-family: 'Comic Sans MS', 'Marker Felt', cursive; }
+  </style>
+
+  <!-- Roof -->
+  <path d="M200 120 L400 40 L600 120"
+        stroke="#f28c18"
+        stroke-width="12"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Main text -->
+  <text x="400" y="200"
+        text-anchor="middle"
+        font-size="80"
+        class="title"
+        fill="white">
+    MACHAAN
+  </text>
+
+  <!-- Sub text -->
+  <text x="400" y="250"
+        text-anchor="middle"
+        font-size="50"
+        class="subtitle"
+        fill="white">
+    farmhouse
+  </text>
+</svg>

@@ -1,0 +1,186 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<script src="{% static 'script.js' %}"></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+      <img src="{% static 'images/machaanlogo.svg' %}" alt="Machaan Farmhouse" class="logo-float">
+      
+        <nav class="nav-links">
+          <a href="{% url 'home' %}">Home</a>
+          <a href="{% url 'about' %}">About</a>
+          <a href="{% url 'gallery' %}">Events</a>
+          <a href="{% url 'facilities' %}">Facilities</a>
+          <a href="{% url 'contact' %}">Booking</a>
+      </nav>
+      </header>
+
+
+<section class="hero-section">
+    <div class="hero-content">
+
+        <div class="about-label">ABOUT US</div>
+
+        <h1>
+            Crafting Celebrations,<br>
+            <span>Creating Lifelong Memories</span>
+        </h1>
+
+        <p>
+            At Machaan Farmhouse, we are more than just event planners — we are memory makers.
+            As one of the most trusted event management companies in Mumbai, we specialize
+            in turning your celebrations into unforgettable experiences. From lavish events
+            to corporate gatherings, and festive birthday bashes to soulful musical nights,
+            we offer tailor-made solutions that blend creativity, precision, and professionalism.
+            With a passion for planning and a flair for innovation, Machaan Farm is your
+            one-stop destination for event planning services in Mumbai and beyond.
+        </p>
+
+        <div class="contact-wrapper">
+
+            <svg class="curled-arrow" viewBox="0 0 200 200" >
+                <path d="
+                  M170 160
+                  C190 120, 140 110, 120 130
+                  C100 150, 140 170, 160 150
+                  C180 130, 110 60, 50 80
+                  M65 65 L50 80 L70 85
+                " />
+              </svg>
+        
+              <a href="#philosophy" class="contact-btn">Explore More</a>
+        
+        </div>
+</section>
+
+<section class="philosophy-section" id="philosophy">
+
+    <div class="philosophy-container">
+  
+      <div class="philosophy-left">
+        <img src="{% static 'images/farm.png' %}" alt="">
+        <div class="overlay-box">
+          <h2>
+            Lights. Camera.<br>
+            Action. Our Passion<br>
+            in Motion.
+          </h2>
+        </div>
+      </div>
+  
+      <div class="philosophy-right">
+        <div class="section-title">
+          <span></span>
+          <h4>OUR PHILOSOPHY</h4>
+          <span></span>
+        </div>
+  
+        <div class="content-block">
+          <h3>Our Vision</h3>
+          <p>To provide exclusive services with innovation and creativity.</p>
+        </div>
+  
+        <div class="content-block">
+          <h3>Our Approach</h3>
+          <p>Working to and fro to cater optimum solutions and satisfaction.</p>
+        </div>
+  
+        <div class="content-block">
+          <h3>Our Goals</h3>
+          <p>To give clients experiences that make them return for more.</p>
+        </div>
+  
+        <a href="#whyus" class="contact-btn">Know More</a>
+      </div>
+  
+    </div>
+  
+  </section>
+
+  <section class="why-choose-section" id="whyus">
+
+    <div class="why-header">
+      <div class="why-mini-title">
+        <span></span>
+        WHY CHOOSE
+        <span></span>
+      </div>
+  
+      <h2>Why Choose Machaan Farmhouse</h2>
+  
+      <p>
+        Experience personalized event planning with a creative touch, flawless execution,
+        and a team that transforms your vision into unforgettable, stress-free celebrations every single time.
+      </p>
+    </div>
+  
+    <div class="why-grid">
+  
+      <div class="why-item">
+        <div class="why-icon">
+          🧠
+        </div>
+        <h4>Creative idea generation</h4>
+      </div>
+  
+      <div class="why-item">
+        <div class="why-icon">
+          💡
+        </div>
+        <h4>All solutions in one go</h4>
+      </div>
+  
+      <div class="why-item">
+        <div class="why-icon">
+          🎯
+        </div>
+        <h4>One point contact</h4>
+      </div>
+  
+      <div class="why-item">
+        <div class="why-icon">
+          ⭐
+        </div>
+        <h4>Best services</h4>
+      </div>
+  
+      <div class="why-item">
+        <div class="why-icon">
+          👔
+        </div>
+        <h4>Professional with personal touch</h4>
+      </div>
+  
+    </div>
+  
+  </section>
+
+
+<!-- PREMIUM WHATSAPP BUTTON -->
+<div class="whatsapp-float">
+  <div class="whatsapp-tooltip">Chat with us</div>
+  <a href="https://wa.me/917977120052?text=Hello%20MACHAAN%20Farmhouse,%20I%20want%20to%20book."
+     class="whatsapp-btn"
+     target="_blank">
+     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+</div>
+
+<footer>
+  <p>© 2026 MACHAAN Farmhouse</p>
+</footer>
+
+</body>
+</html>

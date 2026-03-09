@@ -1,0 +1,240 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Events</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+=
+</head>
+
+<body>
+
+    <header class="navbar">
+        <img src="{% static 'images/machaanlogo.svg' %}" alt="Machaan Farmhouse" class="logo-float">
+      
+        <nav class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'gallery' %}">Events</a>
+            <a href="{% url 'facilities' %}">Facilities</a>
+            <a href="{% url 'contact' %}">Booking</a>
+        </nav>
+      </header>
+
+
+<section class="hero-section">
+    <div class="hero-content">
+
+        <div class="about-label">EVENTS</div>
+
+        <h1>
+          Turns Your Celebrations Into<br>
+            <span>Unforgettable Signature Events</span>
+        </h1>
+
+        <p>
+            At Machaan Farmhouse,every celebration begins with a story — yours.
+           From baby showers to birthdays, large events to corporate galas, 
+           we create unforgettable experiences through innovative planning, 
+           heartfelt details, and flawless execution. Let us transform your vision into a cherished memory,
+            one event at a time
+        </p>
+
+        <div class="contact-wrapper">
+
+            <svg class="curled-arrow" viewBox="0 0 200 200" >
+                <path d="
+                  M170 160
+                  C190 120, 140 110, 120 130
+                  C100 150, 140 170, 160 150
+                  C180 130, 110 60, 50 80
+                  M65 65 L50 80 L70 85
+                " />
+              </svg>
+        
+              <a href="#event1" class="contact-btn">Explore More</a>
+        
+        </div>
+</section>
+
+<!-- ================= SERVICES WRAPPER ================= -->
+
+<div class="services-wrapper">
+
+  <!-- ================= BABY SHOWER ================= -->
+  <section class="service-section" id="event1">
+  
+    <div class="service-content scroll-animate">
+        <div class="service-label">
+            <span></span> EVENTS <span></span>
+        </div>
+  
+        <h1>Baby Shower Event</h1>
+  
+        <p>
+            Celebrate the joy of welcoming a new baby with Machaan Farmhouse.
+            Let us create a warm, love-filled atmosphere so you can cherish every special moment.
+            Trust us to turn your vision into a magical celebration.
+        </p>
+    </div>
+  
+    <div class="service-image scroll-animate">
+        <img src="{% static 'images/image3.jpg' %}" alt="Baby Shower">
+    </div>
+  
+  </section>
+  
+  
+  <!-- ================= THEME BIRTHDAY ================= -->
+  <section class="service-section reverse">
+  
+    <div class="service-image scroll-animate">
+        <img src="{% static 'images/image6.jpg' %}" alt="Theme Birthday">
+    </div>
+  
+    <div class="service-content scroll-animate">
+        <div class="service-label">
+            <span></span> EVENTS <span></span>
+        </div>
+  
+        <h1>Theme Birthdays</h1>
+  
+        <p>
+            Make birthdays unforgettable with creative theme planning,
+            immersive décor, and seamless coordination.
+        </p>
+    </div>
+  
+  </section>
+  
+  
+  <!-- ================= WEDDING ================= -->
+  <section class="service-section">
+  
+    <div class="service-content scroll-animate">
+        <div class="service-label"><span></span> EVENTS <span></span></div>
+  
+        <h1>Wedding Events</h1>
+  
+        <p>
+            Elegant wedding celebrations designed with perfection,
+            coordination, and unforgettable experiences.
+        </p>
+    </div>
+  
+    <div class="service-image scroll-animate">
+        <img src="{% static 'images/swimingpool.jpeg' %}" alt="Wedding">
+    </div>
+  
+  </section>
+  
+  
+  <!-- ================= ENGAGEMENT ================= -->
+  <section class="service-section reverse">
+  
+    <div class="service-image scroll-animate">
+        <img src="{% static 'images/image3.jpg' %}" alt="Engagement">
+    </div>
+  
+    <div class="service-content scroll-animate">
+        <div class="service-label"><span></span> EVENTS <span></span></div>
+  
+        <h1>Engagement Ceremonies</h1>
+  
+        <p>
+            Stylish engagement celebrations crafted with elegance
+            and memorable experiences.
+        </p>
+    </div>
+  
+  </section>
+  
+  
+  <!-- ================= ANNIVERSARY ================= -->
+  <section class="service-section">
+  
+    <div class="service-content scroll-animate">
+        <div class="service-label"><span></span> EVENTS <span></span></div>
+  
+        <h1>Anniversary Celebrations</h1>
+  
+        <p>
+            Romantic anniversary events designed to celebrate
+            love and lifelong memories.
+        </p>
+    </div>
+  
+    <div class="service-image scroll-animate">
+        <img src="{% static 'images/image6.jpg' %}" alt="Anniversary">
+    </div>
+  
+  </section>
+  
+  
+  <!-- ================= CORPORATE ================= -->
+  <section class="service-section reverse">
+  
+    <div class="service-image scroll-animate">
+        <img src="{% static 'images/image3.jpg' %}" alt="Corporate">
+    </div>
+  
+    <div class="service-content scroll-animate">
+        <div class="service-label"><span></span> EVENTS <span></span></div>
+  
+        <h1>Corporate Events</h1>
+  
+        <p>
+            Professional corporate events executed with precision
+            and premium presentation.
+        </p>
+    </div>
+  
+  </section>
+  
+  
+  <!-- ================= THEME PARTIES ================= -->
+  <section class="service-section">
+  
+    <div class="service-content scroll-animate">
+        <div class="service-label"><span></span> EVENTS <span></span></div>
+  
+        <h1>Theme Parties</h1>
+  
+        <p>
+            Creative theme parties that transform celebrations into
+            immersive experiences.
+        </p>
+    </div>
+  
+    <div class="service-image scroll-animate">
+        <img src="{% static 'images/swimingpool.jpeg' %}" alt="Theme Party">
+    </div>
+  
+  </section>
+  
+  </div>
+
+
+<!-- PREMIUM WHATSAPP BUTTON -->
+<div class="whatsapp-float">
+    <div class="whatsapp-tooltip">Chat with us</div>
+    <a href="https://wa.me/917977120052?text=Hello%20MACHAAN%20Farmhouse,%20I%20want%20to%20book."
+       class="whatsapp-btn"
+       target="_blank">
+       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2026 MACHAAN Farmhouse</p>
+  </footer>
+
+  <script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>
